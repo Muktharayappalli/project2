@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body><form method="post" action="{% url 'imagesave' %}" enctype="multipart/form-data">
+    {% csrf_token %}
+  <h1>register here</h1>
+  <input type="text" placeholder="your name" name="name"><br><br>
+  <input type="file" name="image"><br><br>
+  <button type="submit">ok</button>
+</form>
+</body>
+</html>

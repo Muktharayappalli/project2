@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title> SAPLES </title>
+   </head>
+
+   <body  action="{% url 'img' %}" enctype="multipart/form-data">
+    {% csrf_token %}
+      <img src = "C:\Users\HP\Downloads\11.jpg" alt = "usemap" usemap = "#lessons"/>
+      <map name = "lessons">
+         <area shape = "poly" coords = "74,0,113,29,98,72,52,72,38,27"
+            href = "/perl/index.htm" alt = "Perl Tutorial" target = "_blank" />
+         <area shape = "rect" coords = "22,83,126,125" alt = "HTML Tutorial"
+            href = "/html/index.htm" target = "_blank" />
+         <area shape = "circle" coords = "73,168,32" alt = "PHP Tutorial"
+            href = "/php/index.htm" target = "_blank" />
+      </map>
+   </body>
+</html>
